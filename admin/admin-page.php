@@ -1,19 +1,19 @@
 <?php
-function countdown_header_admin_page()
+function countdown_banner_admin_page()
 {
 	add_submenu_page(
 		"themes.php",
-		"Event Countdown Header",
-		"Event Countdown Header",
+		"Event Countdown banner",
+		"Event Countdown banner",
 		"manage_options",
-		"event-countdown-header",
-		"countdown_header_admin_page_callback",
+		"event-countdown-banner",
+		"countdown_banner_admin_page_callback",
 	);
 }
 
-add_action("admin_menu", "countdown_header_admin_page");
+add_action("admin_menu", "countdown_banner_admin_page");
 
-function countdown_header_admin_page_callback()
+function countdown_banner_admin_page_callback()
 {
 	wp_enqueue_script(
 		"event-countdown-admin-js",

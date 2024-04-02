@@ -1,10 +1,10 @@
 <?php
 /**
- * Plugin Name: Event Countdown Header
- * Description: Adds a countdown timer for a specific event to the header of every page. Allows colour customisation of the banner
- * Version: 1.1.0
+ * Plugin Name: Event Countdown Banner
+ * Description: Adds a countdown timer for a specific event to the top of every page.
+ * Version: 1.0
  * Author: Jamie Speller
- * Author URI: mailto:plugins@xhem.al?subject=Event%20Countdown%20Header
+ * Author URI: mailto:plugins@xhem.al?subject=Event%20Countdown%20Banner
  */
 
 // Exit if accessed directly.
