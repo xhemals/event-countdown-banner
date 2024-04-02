@@ -1,0 +1,14 @@
+{
+	"env": {
+		"dev": {
+			"presets": [
+				["minify", { "builtIns": false }],
+				"@babel/preset-env",
+				"@babel/preset-react"
+			]
+		},
+		"build": {
+			"presets": ["minify", "@babel/preset-env", "@babel/preset-react"]
+		}
+	}
+}

@@ -1,0 +1,117 @@
+#ech-timer {
+	--ech-background-colour: white;
+	--ech-text-colour: black;
+	--ech-card-colour: red;
+	--ech-separator-text: "|";
+}
+
+.countdown-header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--ech-background-colour);
+	color: var(--ech-text-colour);
+	padding: 0 5px;
+	box-sizing: border-box;
+}
+
+.text-stacked .countdown-header {
+	gap: 10px;
+}
+
+.default .countdown-timers {
+	width: 64px;
+	padding: 2.5px 10px;
+	/* display: flex; */
+	/* justify-content: center; */
+	/* align-items: center; */
+	flex-direction: column;
+	background-color: var(--ech-card-colour);
+	border-radius: 5px;
+	margin: 5px 0;
+}
+
+.text-stacked .countdown-timers {
+	flex-direction: column;
+}
+
+.text-separator .countdown-timers {
+	flex-direction: row;
+	gap: 5px;
+	font-size: 1.5em;
+}
+
+.text-separator .countdown-timers.days-div::after,
+.text-separator .countdown-timers.hours-div::after,
+.text-separator .countdown-timers.mins-div::after {
+	color: var(--ech-card-colour);
+	content: var(--ech-separator-text);
+}
+
+.countdown-timers {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.text-separator .countdown-timers,
+.text-separator .event-title-div {
+	margin-left: -5px;
+}
+
+.event-title-div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.countdown-header > *:not(:last-child) {
+	margin-right: 10px;
+}
+
+.default .time-left {
+	text-align: center;
+	width: 100%;
+	font-size: 1.5em;
+	padding-bottom: 4px;
+	border-bottom: 1px solid var(--ech-text-colour);
+}
+
+.text-stacked .time-left {
+	text-align: center;
+	width: 100%;
+	border-bottom: none;
+	font-size: 1.5em;
+	padding-bottom: 4px;
+	padding-top: 4px;
+}
+
+.text-separator .time-left {
+	text-align: center;
+	width: 100%;
+	padding-bottom: 4px;
+	padding-top: 4px;
+}
+
+.event-title {
+	font-size: 1.5em;
+}
+
+.countdown-header-locked {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+}
+
+.event-countdown-timer {
+	height: fit-content;
+	font-size: 1rem;
+	line-height: 27.2px;
+}
+
+.event-countdown-timer a {
+	text-decoration: none;
+}
