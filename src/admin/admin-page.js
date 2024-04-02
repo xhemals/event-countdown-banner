@@ -99,6 +99,7 @@ function AdminPage() {
 				/> */}
 			</div>
 			<form method="post" className="choose-post-form">
+				<input type="hidden" name="nonce" value={php_vars.nonce} />
 				<div className="post-section">
 					<h3>Choose a post to display in the header</h3>
 					<div className="post-list">

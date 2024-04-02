@@ -34,7 +34,13 @@ function countdown_banner_admin_page_callback()
 		false,
 		true,
 	);
+	$nonce = wp_create_nonce("wp_rest");
 
+	if (
+		isset($_POST["nonce"]) &&
+		wp_verify_nonce($_POST["nonce"], "your_nonce_action")
+	) {
+	}
 	if (isset($_POST["tribe_events_post_type"])) {
 		$selected_post =
 			$_POST["tribe_events_post_type"] == "none"
@@ -115,6 +121,7 @@ function countdown_banner_admin_page_callback()
 		"cardColour" => $card_colour,
 		"layout" => $layout,
 		"separatorText" => $separator_text,
+		"nonce" => $nonce,
 	];
 
 	wp_localize_script("event-countdown-admin-js", "php_vars", $data);
