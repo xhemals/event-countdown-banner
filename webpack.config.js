@@ -6,11 +6,11 @@ const TerserPlugin = require("terser-webpack-plugin");
 module.exports = {
 	context: path.resolve(__dirname, "src"),
 	entry: {
-		"event-countdown-header": path.resolve(__dirname, "src/page-header.js"),
+		"event-countdown-banner": path.resolve(__dirname, "src/page-header.js"),
 		"admin/admin-page": path.resolve(__dirname, "src/admin/admin-page.js"),
-		"components/display-header": path.resolve(
+		"components/display-banner": path.resolve(
 			__dirname,
-			"src/components/display-header.js",
+			"src/components/display-banner.js",
 		),
 		"admin/colour-picker": path.resolve(
 			__dirname,

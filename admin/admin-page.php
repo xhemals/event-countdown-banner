@@ -3,8 +3,8 @@ function countdown_banner_admin_page()
 {
 	add_submenu_page(
 		"themes.php",
-		"Event Countdown banner",
-		"Event Countdown banner",
+		"Event Countdown Banner",
+		"Event Countdown Banner",
 		"manage_options",
 		"event-countdown-banner",
 		"countdown_banner_admin_page_callback",

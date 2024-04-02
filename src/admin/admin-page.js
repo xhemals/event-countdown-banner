@@ -6,7 +6,7 @@ import logo from "../images/ECH-logo.png";
 import cardLayout from "../images/card-layout.png";
 import textStackedLayout from "../images/text-stacked-layout.png";
 import textWithSeparatorLayout from "../images/text-with-separator-layout.png";
-import DisplayHeader from "../components/display-header";
+import DisplayHeader from "../components/display-banner";
 
 function AdminPage() {
 	const [backgroundColour, setBackgroundColour] = useState(

@@ -40,6 +40,13 @@ The Event Countdown Banner plugin adds a customisable countdown timer to the top
 
 ---
 
+== Frequently Asked Questions ==
+
+= Where can I find the settings for this plugin? =
+Settings can be found by either pressing the `Settings` button on the plugin list. Or by going to *Appearance > Event Countdown Banner*
+
+---
+
 #### 🎧 Support
 If you have any issues you can [email me](mailto:plugins@xhem.al?subject=Event%20Countdown%20Banner%20Support "Email me") or open an issue on [github](https://github.com/xhemals/event-countdown-banner/issues/new "Open an issue on GitHub").
 

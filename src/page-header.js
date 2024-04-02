@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
 import "./countdown-header.css";
-import DisplayHeader from "./components/display-header";
+import DisplayHeader from "./components/display-banner";
 
 function EventCountdownHeader() {
 	var lockHeader = php_vars.lock_banner;

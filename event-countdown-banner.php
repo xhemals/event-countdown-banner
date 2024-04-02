@@ -82,7 +82,7 @@ function plugin_activated()
 				wp_enqueue_script(
 					"event-countdown-js",
 					plugin_dir_url(__FILE__) .
-						"build/event-countdown-header.js",
+						"build/event-countdown-banner.js",
 					["wp-element"],
 					1,
 					true,
@@ -91,7 +91,7 @@ function plugin_activated()
 				wp_enqueue_style(
 					"event-countdown-css",
 					plugin_dir_url(__FILE__) .
-						"build/event-countdown-header.css",
+						"build/event-countdown-banner.css",
 				);
 			}
 		}
