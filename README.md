@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="src/images/ECH-logo.png" alt="Card Layout" height="250" />
+    <img src="/src/images/ECH-Logo.png" alt="Event Countdown Header Logo" height="250" />
 </p>
 
 # Event Countdown Header
