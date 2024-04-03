@@ -1,8 +1,4 @@
-<p align="center">
-    <img src="/src/images/ECH-Logo.png" alt="Event Countdown Header Logo" height="250" />
-</p>
-
-# Event Countdown Header
+# Event Countdown Banner
 
 ⚠️ **Important**: This plugin requires [The Events Calendar](https://wordpress.org/plugins/the-events-calendar/ "The Events Calendar") ⚠️
 
