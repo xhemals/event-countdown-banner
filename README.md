@@ -6,7 +6,9 @@ The Event Countdown Banner plugin adds a customisable countdown timer to the top
 
 _If you find this plugin useful, please consider giving it a ⭐ on GitHub! Your support helps!_
 
-## How to Upload this plugin from a Zip File
+_Want to contribute? Check out the [contributing guidelines](CONTRIBUTING.md)_
+
+## How to upload this plugin from a .zip File
 
 1. Download the latest `event-countdown-banner.zip` from [releases](https://github.com/xhemals/event-countdown-banner/releases)
 
