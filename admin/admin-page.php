@@ -15,23 +15,39 @@ add_action("admin_menu", "countdown_banner_admin_page");
 
 function countdown_banner_admin_page_callback()
 {
+	$admin_page_js = plugin_dir_url(__FILE__) . "../build/admin/admin-page.js";
+	$colour_picker_js =
+		plugin_dir_url(__FILE__) . "../build/admin/colour-picker.js";
+	$admin_page_css =
+		plugin_dir_url(__FILE__) . "../build/admin/admin-page.css";
+	$admin_page_js_path =
+		plugin_dir_path(__FILE__) . "../build/admin/admin-page.js";
+	$colour_picker_js_path =
+		plugin_dir_path(__FILE__) . "../build/admin/colour-picker.js";
+	$admin_page_css_path =
+		plugin_dir_path(__FILE__) . "../build/admin/admin-page.css";
+	$admin_page_js_version = filemtime($admin_page_js_path);
+	$colour_picker_js_version = filemtime($colour_picker_js_path);
+	$admin_page_css_version = filemtime($admin_page_css_path);
 	wp_enqueue_script(
 		"event-countdown-admin-js",
-		plugin_dir_url(__FILE__) . "../build/admin/admin-page.js",
+		$admin_page_js,
 		["wp-element"],
-		null,
+		$admin_page_js_version,
 		true,
 	);
 	wp_enqueue_style(
 		"event-countdown-admin-css",
-		plugin_dir_url(__FILE__) . "../build/admin/admin-page.css",
+		$admin_page_css,
+		[],
+		$admin_page_css_version,
 	);
 	wp_enqueue_style("wp-color-picker");
 	wp_enqueue_script(
 		"fsd-b-js",
-		plugin_dir_url(__FILE__) . "../build/admin/colour-picker.js",
+		$colour_picker_js,
 		["wp-color-picker"],
-		false,
+		$colour_picker_js_version,
 		true,
 	);
 	$nonce = wp_create_nonce("wp_rest");

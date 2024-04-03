@@ -45,6 +45,16 @@ function plugin_activated()
 {
 	require_once plugin_dir_path(__FILE__) . "/admin/admin-page.php";
 	require_once plugin_dir_path(__FILE__) . "/admin/settings-link.php";
+	$countdown_banner_js =
+		plugin_dir_url(__FILE__) . "build/event-countdown-banner.js";
+	$countdown_banner_css =
+		plugin_dir_url(__FILE__) . "build/event-countdown-banner.css";
+	$countdown_banner_js_path =
+		plugin_dir_path(__FILE__) . "build/event-countdown-banner.js";
+	$countdown_banner_css_path =
+		plugin_dir_path(__FILE__) . "build/event-countdown-banner.css";
+	$countdown_banner_js_version = filemtime($countdown_banner_js_path);
+	$countdown_banner_css_version = filemtime($countdown_banner_css_path);
 
 	$selected_post = get_option("countdown_banner_selected_tribe_event", "-1");
 	$display_banner = get_option("countdown_banner_display_banner", "off");
@@ -81,17 +91,17 @@ function plugin_activated()
 			if (!is_admin()) {
 				wp_enqueue_script(
 					"event-countdown-js",
-					plugin_dir_url(__FILE__) .
-						"build/event-countdown-banner.js",
+					$countdown_banner_js,
 					["wp-element"],
-					1,
+					$countdown_banner_js_version,
 					true,
 				);
 				wp_localize_script("event-countdown-js", "php_vars", $data);
 				wp_enqueue_style(
 					"event-countdown-css",
-					plugin_dir_url(__FILE__) .
-						"build/event-countdown-banner.css",
+					$countdown_banner_css,
+					[],
+					$countdown_banner_css_version,
 				);
 			}
 		}
