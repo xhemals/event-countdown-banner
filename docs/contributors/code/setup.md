@@ -20,7 +20,7 @@ The following guide will help you get your environment setup to contribute to th
 
 -   ### The Events Calendar
     -   Currently this plugin is built to utilise the WordPress plugin called [The Events Calendar](https://wordpress.org/plugins/the-events-calendar/). Please install this plugin otherwise the plugin will refuse to activate
-    -   You will also need to create an event for it to show in the plugin. To do this follow [these steps](docs/the-events-calendar/createEvent.md)
+    -   You will also need to create an event for it to show in the plugin. To do this follow [these steps](/docs/the-events-calendar/createEvent.md)
 
 ## Getting the code
 

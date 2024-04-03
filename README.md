@@ -1,3 +1,7 @@
+<p align="center">
+    <img src="src/images/ECH-logo.png" alt="Card Layout" height="250" />
+</p>
+
 # Event Countdown Header
 
 ⚠️ **Important**: This plugin requires [The Events Calendar](https://wordpress.org/plugins/the-events-calendar/ "The Events Calendar") ⚠️
